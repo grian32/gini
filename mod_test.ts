@@ -1,5 +1,5 @@
 import INI from "./mod.ts";
-import { assertEquals } from "https://deno.land/std@0.103.0/testing/asserts.ts";
+import { assertEquals } from "./deps.ts";
 
 Deno.test("parser works", () => {
     // intentionally ass ugly
