@@ -1,5 +1,8 @@
 # gini
-A simple INI parser for Deno 
+
+A small and quick INI parser for Deno.
+
+(also it has no deps :o)
 
 ## Example Code
 
