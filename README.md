@@ -4,6 +4,10 @@ A small and quick INI parser(and stringifier) for Deno.
 
 (also it has no deps :o)
 
+## Support
+
+This implementation supports, sections(not nested), variables with values being strings, booleans, null or numbers.
+
 ## Example Code
 
 Parsing an ini file:
