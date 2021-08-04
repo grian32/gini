@@ -15,13 +15,14 @@ INI.parse(inistring);
 Which will return an object like:
 ```ts
 {
-  "section1": {
-    "var1": 1
-  },
-  "section2": {
-    "var2": 2
-    "var3": "string"
-  }
+    section1: {
+        var1: 1,
+    },
+    section2: {
+        var2: true,
+        var3: "string",
+        var4: null,
+     }
 }
 ```
 
@@ -31,4 +32,13 @@ Stringifying an ini file:
 INI.stringify(iniobject);
 ```
 
+Which will output a valid ini string like:
+```ini
+[section1]
+var1=1
+[section2]
+var2=true
+var3="string"
+var4=null
+```
 This function takes a ini object like the one above and returns a valid INI string, it does not preserve comments.
