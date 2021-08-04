@@ -32,7 +32,7 @@ function convertVariable(str: string): number | string | boolean | null {
 
 function parseFunc(str: string): INIObject {
     let obj: INIObject = {};
-    let lines = str.split("\n").filter(i => i != "");
+    let lines = str.split("\n").filter(i => i != "" && !(i.startsWith(";")));
     let reachedBlockName = "";
 
     for (let i of lines) {

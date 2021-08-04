@@ -6,7 +6,7 @@ Deno.test("parser works", () => {
     const INI_STRING = `[hi]
 
 there="streei"
-
+; bye object
 [bye]
 
 man=3
